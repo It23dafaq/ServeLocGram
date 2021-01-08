@@ -1,46 +1,74 @@
-<div class="w-100 h-100 backgroundimageLogin position-relative" >
-    <div class="container position-absolute marginLogin  text-center">
-        <div class="row ">
-             <div class="col-6 bg-white padding-0 opacity">
-                  <div class="row">
-                    <div class="col">
-                       <h5>test</h5>
-                    </div>
+<div class="w-100 h-100 backgroundimageLogin position-relative" ></div>
+  <div class="container position-absolute marginLogin  text-center boxshadow">
+      <div class="row ">
+           <div class="col-7 bg-white padding-0 opacity">
+              <div class="row mb-5 mt-3">
+                <div class="col">
+                 <h1>LocGram</h1>
+                </div>
+              </div>
+                <div class="row mb-3">
+                  <div class="col">
+                     <h2>The first location based finder for all industries</h2>
                   </div>
-                  <div class="row">
-                    <div class="col">
-                        <p>becouse i can</p>
-                        </div>
+                </div>
+                <div class="row mb-5">
+                  <div class="col">
+                      <h5>welcome back.Please login to your account</h5>
                   </div>
-                  <div class="row">
-                       <div class="col">
-                    <div class="example-container ">
-                        <mat-form-field class="inputSameWidth" appearance="fill">
-                          <mat-label>Enter your email</mat-label>
-                          <input  matInput placeholder="pat@example.com" [formControl]="email" required>
-                          <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
-                        </mat-form-field>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col">
-                    <mat-form-field class="inputSameWidth"  appearance="fill">
-                        <mat-label>Enter your password</mat-label>
-                        <input matInput [type]="hide ? 'password' : 'text'" [formControl]="pass" required>
-                        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
-                        <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
-                        </button>
+                </div>
+                <div class="row">
+                     <div class="col">
+                  <div class="example-container ">
+                      <mat-form-field class="inputSameWidth" appearance="fill">
+                        <mat-label>Enter your email</mat-label>
+                        <input  matInput placeholder="pat@example.com" [formControl]="email" required>
+                        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
                       </mat-form-field>
                     </div>
-                 
+                  </div>
                 </div>
-             </div>
-             <div class="col-6 padding-0">
-                <img src="/assets/img/testLogo.jpg" alt="image">
-             </div>
-        </div>
-        
-    </div>
+                <div class="row">
+                  <div class="col">
+                  <mat-form-field class="inputSameWidth"  appearance="fill">
+                      <mat-label>Enter your password</mat-label>
+                      <input matInput [type]="hide ? 'password' : 'text'" [formControl]="pass" required>
+                      <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                      <mat-icon>{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                      </button>
+                    </mat-form-field>
+                  </div>
+               
+              </div>
+              <div class="row mb-5 offset-2">
+                <div class="col-auto">
+                  <button class="loginButtons" mat-flat-button color="primary">Login</button>
+                </div>
+                <div class="col-auto">
+                  <button class="loginButtons" mat-stroked-button>Sign Up</button>
+                </div>
+              </div>
+              <div class="row mt-2 offset-2">
+                  <div class="col-auto">
+                    <h4>Or Login with :</h4>
+                  </div>
+                 <div class="col-auto">
+                   <h5>Facebook</h5>
+                </div>
+                <div class="col-auto">
+                  <h5>Instangram</h5>
+                </div>
+                <div class="col-auto">
+                  <h5>Linkedin</h5>
+                </div>
+              </div>
+           </div>
+           
+           <div class="col-5 padding-0">
+              <img class="imgheight" src="/assets/img/testLogo.jpg" alt="image">
+           </div>
+      </div>
+      
+  </div>
 
-</div>
+
