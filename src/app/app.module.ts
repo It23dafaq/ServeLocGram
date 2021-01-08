@@ -11,11 +11,13 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {MatButtonModule} from '@angular/material/button';
 import {MatIconModule} from '@angular/material/icon';
+import { SignupComponent } from './components/signup/signup.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,
@@ -23,6 +25,7 @@ import {MatIconModule} from '@angular/material/icon';
     MatInputModule,
     RouterModule.forRoot([
       {path: 'login', component: LoginComponent},
+      {path: 'signup', component: SignupComponent},
       {path: '', redirectTo: '/login', pathMatch: 'full'}
     ]),
     AppRoutingModule,

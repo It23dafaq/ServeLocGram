@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormControl, Validators} from '@angular/forms';
+import { Router } from "@angular/router";
 @Component({
   selector: 'app-login',
   templateUrl: './login.component.html',
@@ -10,16 +11,24 @@ export class LoginComponent implements OnInit {
   pass = new FormControl('', [Validators.required, Validators.minLength(6)]);
   
   hide = true;
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
+  //this method handle error form 
   getErrorMessage() {
     if (this.email.hasError('required')) {
       return 'You must enter a value';
     }
 
     return this.email.hasError('email') ? 'Not a valid email' : '';
+  }
+
+  //this method redirect to sign up
+  signUp(){
+    //this line use router to navigate
+    this.router.navigate(['/signup']);
+
   }
 }
 
