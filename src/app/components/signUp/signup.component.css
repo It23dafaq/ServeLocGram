@@ -11,7 +11,7 @@
 
 }
 .backgroundimageLogin{
-    background-image: url('/assets/img/testLogo.jpg');
+    background-image: url('/assets/img/bgcolorsignup1.jpg');
     -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -28,4 +28,9 @@
 }
 .inputSameWidth{
   width: 220px !important;
+}
+.formColor{
+  /* background-color: #3caea3 !important; */
+  background-image: url('/assets/img/registerbg.jpg');
+  
 }
